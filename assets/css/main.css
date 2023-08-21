@@ -36,8 +36,34 @@ nav a:hover, nav a.active {
 
 #accueil {
     height: 100vh;
-    background-color: #f5f5f5; /* Couleur grise */
+    background-color: white;
 }
+
+.accueil-container {
+    display: flex;
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: center; /* Centre les éléments horizontalement */
+    height: 100vh; /* 100% de la hauteur de la fenêtre de visualisation */
+}
+
+.photo-partie, .texte-partie {
+    flex: 1; /* Prend 50% de l'espace disponible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em; /* Un peu d'espace intérieur pour respirer */
+}
+
+.photo-partie img {
+    width: 200px;
+}
+
+.texte-partie p {
+    text-align: center;
+    font-size: 30px;
+    font-style: bold; 
+}
+
 
 #apropos {
     height: auto;
@@ -200,36 +226,41 @@ nav a:hover, nav a.active {
 
 #contact p {
     font-size: 20px;
-    margin-bottom: 50px; /* Espace avant la liste */
+    margin-bottom: 50px; 
     width: 60%;
     margin-left: auto;
-    margin-right: auto; /* Centrer le paragraphe */
+    margin-right: auto; 
 }
 
 .info-contact {
-    list-style-type: none; /* Supprime les puces */
+    list-style-type: none; 
     padding: 10px;
-    margin: 0 auto; /* Centrer la liste */
-    width: 60%; /* Largeur de la liste */
-    font-size: 18px; /* Ajuster selon vos préférences */
+    margin: 0 auto; 
+    width: 60%; 
+    font-size: 18px; 
 }
 
 .info-contact li {
-    margin-bottom: 15px; /* Espace entre les éléments de la liste */
+    margin-bottom: 15px; 
 }
 
 .info-contact a {
-    text-decoration: none; /* Supprime le soulignement */
-    color: #333; /* Couleur du texte des liens, à ajuster selon vos préférences */
-    transition: color 0.3s ease; /* Animation douce lors du changement de couleur */
+    text-decoration: none; 
+    color: #333;
+    transition: color 0.3s ease; 
 }
 x   
 .info-contact a:hover {
-    color: red; /* Couleur lorsqu'on survole un lien */
+    color: red; 
 }
 
 
 @media screen and (max-width: 768px) {
+
+    .accueil-container {
+        flex-direction: column;
+    }
+
     .container {
         width: 90%;
         padding: 5% 0;
@@ -307,10 +338,9 @@ x
 
 }
 
-/* Pour les écrans de mobiles */
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 25px; /* Réduire la taille de la police pour les petits écrans */
+        font-size: 25px; 
     }
 
     h2 {
