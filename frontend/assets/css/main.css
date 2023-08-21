@@ -1,0 +1,332 @@
+/* Styles de base de la navbar */
+nav {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Ombre sous la navbar */
+    z-index: 1000; /* Pour s'assurer que la navbar reste au-dessus des autres éléments */
+    height: 60px; /* Hauteur de la navbar */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centre les boutons dans la navbar */
+    align-items: center;
+    height: 100%;
+}
+
+nav li {
+    margin: 0 15px; /* Espace entre les boutons */
+}
+
+nav a {
+    text-decoration: none;
+    color: black; /* Couleur du texte */
+    transition: color 0.3s ease; /* Animation douce lors du changement de couleur */
+}
+
+nav a:hover, nav a.active {
+    color: red; /* Couleur du texte lorsqu'on survole et pour la section active */
+}
+
+#accueil {
+    height: 100vh;
+    background-color: #f5f5f5; /* Couleur grise */
+}
+
+#apropos {
+    height: 100vh;
+}
+
+/* Pour le titre principal */
+#apropos h1 {
+    padding-top: 100px;
+    text-align: center; /* Centrage horizontal */
+    font-size: 50px; /* Taille de la police, à ajuster selon vos préférences */
+    margin-bottom: 50px; /* Espace sous le titre principal */
+}
+
+/* Pour les titres secondaires */
+#apropos h2 {
+    text-align: left; /* Aligné à gauche */
+    margin-left: 10%; /* Un petit décalage à gauche par rapport au titre principal */
+    font-size: 30px; /* Taille de la police, à ajuster selon vos préférences */
+    margin-bottom: 40px; /* Espace sous les titres secondaires */
+}
+
+/* Pour le texte des objectifs */
+#apropos p {
+    width: 60%; /* Les phrases ne prendront que 70% de la largeur de la page */
+    margin-left: 10%; /* Un petit décalage à gauche pour l'alignement */
+    font-size: 20px; /* Taille de la police, à ajuster selon vos préférences */
+    margin-bottom: 40px; /* Espace sous le paragraphe */
+}
+
+/* Pour les icônes */
+#apropos .icones-services i img {
+    width: 50px; /* Ajuster selon la taille souhaitée pour les icônes */
+    height: 50px; /* Ajuster pour maintenir une taille carrée */
+}
+
+#cv {
+    height: 70vh;
+}
+
+#cv h1 {
+    padding-top:70px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+
+.timeline-item {
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.timeline-content {
+    background: #f9f9f9; /* ou une autre couleur */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    width: 40%; /* ou selon vos besoins */
+}
+
+#competences {
+    text-align: center;
+    height: 100vh;
+}
+
+#competences h1 {
+    padding-top: 100px;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.competence {
+    margin: 50px 0;
+}
+
+.competence h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.jauge {
+    background-color: #e0e0e0;
+    height: 10px;
+    width: 50%; /* Vous pouvez ajuster la largeur totale de la jauge ici */
+    margin: 0 auto; /* Centre la jauge horizontalement */
+    border-radius: 5px;
+}
+
+.jauge-remplissage {
+    background-color: #333; 
+    height: 100%;
+    border-radius: 5px;
+}
+
+.competence p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+#projets {
+    padding-top: 70px;
+    height: 70vh;
+    text-align: center;
+}
+
+
+
+#projets h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: #333; /* Une couleur de texte foncé - ajustez selon votre style */
+}
+
+.projets {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.projets h3 {
+    font-size: 35px;
+    margin-top: 0;
+}
+
+.projets a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF; /* Une couleur de lien typique - ajustez selon votre style */
+    text-decoration: none;
+}
+
+.projets a:hover {
+    text-decoration: underline;
+}
+
+
+#contact {
+    height: 50vh;
+    padding-top: 100px; /* Ajustement du padding pour centrer verticalement le contenu */
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#contact p {
+    font-size: 20px;
+    margin-bottom: 50px; /* Espace avant la liste */
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto; /* Centrer le paragraphe */
+}
+
+.info-contact {
+    list-style-type: none; /* Supprime les puces */
+    padding: 0;
+    margin: 0 auto; /* Centrer la liste */
+    width: 60%; /* Largeur de la liste */
+    font-size: 18px; /* Ajuster selon vos préférences */
+}
+
+.info-contact li {
+    margin-bottom: 15px; /* Espace entre les éléments de la liste */
+}
+
+.info-contact a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: #333; /* Couleur du texte des liens, à ajuster selon vos préférences */
+    transition: color 0.3s ease; /* Animation douce lors du changement de couleur */
+}
+x   
+.info-contact a:hover {
+    color: red; /* Couleur lorsqu'on survole un lien */
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 5% 0;
+    }
+    
+    .left, .right {
+        width: 100%;
+    }
+
+    .box {
+        margin-bottom: 20px;
+    }
+    
+    .timeline::before {
+        display: none;
+    }
+    
+    .timeline-icon {
+        display:none;
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #competences h1 {
+        font-size: 40px;
+    }
+
+    .timeline-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu-burger {
+        width: 30px; 
+        height: 22px; 
+        position: absolute; 
+        top: 50%; 
+        right: 15px; 
+        transform: translateY(-50%); 
+        cursor: pointer; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 1;
+    }
+    
+    .barre {
+        height: 4px;
+        background-color: black;
+        width: 100%;
+        border-radius: 2px;
+    }
+    
+    nav ul {
+        display: none; 
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        border-top: 1px solid #e0e0e0;
+        height: auto;
+    }
+    
+    nav li {
+        padding: 10px;
+    }
+
+
+}
+
+/* Pour les écrans de mobiles */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 25px; /* Réduire la taille de la police pour les petits écrans */
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .box {
+        padding: 10px;
+    }
+    
+}
+
+
+
+
