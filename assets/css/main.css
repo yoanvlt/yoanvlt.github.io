@@ -40,7 +40,7 @@ nav a:hover, nav a.active {
 }
 
 #apropos {
-    height: 100vh;
+    height: auto;
 }
 
 /* Pour le titre principal */
@@ -74,7 +74,7 @@ nav a:hover, nav a.active {
 }
 
 #cv {
-    height: 70vh;
+    height: auto;
 }
 
 #cv h1 {
@@ -113,7 +113,7 @@ nav a:hover, nav a.active {
 
 #competences {
     text-align: center;
-    height: 100vh;
+    height: auto;
 }
 
 #competences h1 {
@@ -152,7 +152,7 @@ nav a:hover, nav a.active {
 
 #projets {
     padding-top: 70px;
-    height: 70vh;
+    height: auto;
     text-align: center;
 }
 
@@ -188,7 +188,7 @@ nav a:hover, nav a.active {
 
 
 #contact {
-    height: 50vh;
+    height: auto;
     padding-top: 100px; /* Ajustement du padding pour centrer verticalement le contenu */
     text-align: center;
 }
@@ -208,7 +208,7 @@ nav a:hover, nav a.active {
 
 .info-contact {
     list-style-type: none; /* Supprime les puces */
-    padding: 0;
+    padding: 10px;
     margin: 0 auto; /* Centrer la liste */
     width: 60%; /* Largeur de la liste */
     font-size: 18px; /* Ajuster selon vos préférences */
