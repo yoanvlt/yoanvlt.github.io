@@ -36,7 +36,10 @@ nav a:hover, nav a.active {
 
 #accueil {
     height: 100vh;
-    background-color: white;
+    background-image: url("../../assets/img/informatique-casteljaloux.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .accueil-container {
@@ -52,6 +55,7 @@ nav a:hover, nav a.active {
     align-items: center;
     justify-content: center;
     padding: 2em; /* Un peu d'espace intérieur pour respirer */
+    
 }
 
 .photo-partie img {
@@ -61,7 +65,11 @@ nav a:hover, nav a.active {
 .texte-partie p {
     text-align: center;
     font-size: 30px;
-    font-style: bold; 
+    font-style: bold;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
 }
 
 
@@ -97,6 +105,7 @@ nav a:hover, nav a.active {
 #apropos .icones-services i img {
     width: 50px; /* Ajuster selon la taille souhaitée pour les icônes */
     height: 50px; /* Ajuster pour maintenir une taille carrée */
+    margin-left: 10%;
 }
 
 #cv {
@@ -334,6 +343,7 @@ x
     nav li {
         padding: 10px;
     }
+    
 
 
 }
