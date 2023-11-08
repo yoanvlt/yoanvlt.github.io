@@ -60,6 +60,8 @@ nav a:hover, nav a.active {
 
 .photo-partie img {
     width: 200px;
+    border: 5px white solid;
+    border-radius: 15px;
 }
 
 .texte-partie p {
